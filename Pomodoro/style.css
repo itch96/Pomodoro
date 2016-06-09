@@ -8,7 +8,9 @@ body {
 	background: -o-linear-gradient(-45deg, #2EE9FF, #3B76FF);
 	background: -moz-linear-gradient(-45deg, #2EE9FF, #3B76FF);
 }
+
 .heading {
+	margin-top: -10px;
 	text-align: center;
 	font-size: 80px;
 	font-family: "Poiret One";
@@ -29,12 +31,14 @@ body {
 .wtimeInterval, .btimeInterval {
 	margin-top: 3vh;
 	text-align: center;
+	margin-top: 1vh;
 }
 .clock {
+	margin-top: -2vh;
 	text-align: center;
 }
 .play, .reset {
-	margin-top: 5vh;
+	margin-top: 0vh;
 	text-align: center;
 	font-size: 50px;
 }
