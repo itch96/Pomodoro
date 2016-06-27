@@ -7,12 +7,12 @@ body {
 	background: -webkit-linear-gradient(-45deg, #2EE9FF, #3B76FF);
 	background: -o-linear-gradient(-45deg, #2EE9FF, #3B76FF);
 	background: -moz-linear-gradient(-45deg, #2EE9FF, #3B76FF);
+	text-align: center;
 }
 
 .heading {
-	margin-top: -10px;
 	text-align: center;
-	font-size: 80px;
+	font-size: 9vw;  /*vw percent of represents viewport width , so text will scale down if viewed on smaller screen*/
 	font-family: "Poiret One";
 	text-shadow: 1px 3px 10px black;
 }
@@ -29,16 +29,16 @@ body {
 	padding: 0;
 }
 .wtimeInterval, .btimeInterval {
-	margin-top: 3vh;
+	margin-top: none;
 	text-align: center;
-	margin-top: 1vh;
+	margin-top: 1vw;
 }
 .clock {
-	margin-top: -2vh;
+	margin-top: none;
 	text-align: center;
 }
 .play, .reset {
-	margin-top: 0vh;
+	margin-top: none;
 	text-align: center;
 	font-size: 50px;
 }
@@ -57,6 +57,7 @@ a:visited {
 .minutes {
 	font-family: "Poiret One";
 	font-size: 100px;
+	padding-left:30px;
 }
 .seconds {
 	font-family: "Poiret One";
