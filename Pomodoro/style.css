@@ -29,25 +29,15 @@ body {
 	padding: 0;
 }
 .wtimeInterval, .btimeInterval {
-<<<<<<< HEAD
 	text-align: center;
 	margin-top: 2vh;
-=======
-	margin-top: none;
-	text-align: center;
-	margin-top: 1vw;
->>>>>>> 9db231d41ce33802c6f5cba57e86354f9d50d1b9
 }
 .clock {
 	margin-top: none;
 	text-align: center;
 }
 .play, .reset {
-<<<<<<< HEAD
 	margin-top: 5vh;
-=======
-	margin-top: none;
->>>>>>> 9db231d41ce33802c6f5cba57e86354f9d50d1b9
 	text-align: center;
 	font-size: 50px;
 }
