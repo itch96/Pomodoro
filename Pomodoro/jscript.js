@@ -4,15 +4,14 @@ var main = function() {
 	var intervalId = 0;
 	var breakTime = 0; var workTime = 0;
 	var sound = new Audio("alarm.mp3");
-	
+	function PlaySound() {
+		sound.play();
+	}
+
 	if(mins < 10) {$('.minutes').html("0" + mins);}
 	else {$('.minutes').html(mins);}
 	if(secs < 10) {$('.seconds').html("0" + secs);}
 	else {$('.seconds').html(secs);}
-
-	function PlaySound() {
-		sound.play();
-	}
 
 	$('.wplus').on('click', function(){
 		wtimeInterval += 5;
@@ -21,7 +20,6 @@ var main = function() {
 	$('.wminus').on('click', function(){
 		wtimeInterval -= 5;
 		if (wtimeInterval < 0) {wtimeInterval = 0;}
-
 		$('.wtimeInterval').html(wtimeInterval);
 	});
 	$('.bplus').on('click', function(){
@@ -41,7 +39,7 @@ var main = function() {
 			workTime = 1;
 
 			$('body').animate({'opacity':'0'}, 'slow');
-			$('body').addClass('workStyle', 'slow');
+			$('body').addClass('workStyle');
 			$('body').animate({'opacity':'1'}, 'slow');
 								
 			intervalId = setInterval(function(){
@@ -172,18 +170,18 @@ var main = function() {
 
 	$('.play').hover(
 		function() {
-			$('.play').animate({'font-size':'60px', 'margin-top': '-1vh'}, 'fast');
+			$('.play').animate({'font-size':'60px', 'margin-top': '3vh'}, 'fast');
 		},
 		function() {
-			$('.play').animate({'font-size':'50px', 'margin-top': '0vh'}, 'fast');
+			$('.play').animate({'font-size':'50px', 'margin-top': '5vh'}, 'fast');
 		}
 	);
 	$('.reset').hover(
 		function() {
-			$('.reset').animate({'font-size':'60px', 'margin-top': '-1vh'}, 'fast');
+			$('.reset').animate({'font-size':'60px', 'margin-top': '3vh'}, 'fast');
 		},
 		function() {
-			$('.reset').animate({'font-size':'50px', 'margin-top': '0vh'}, 'fast');
+			$('.reset').animate({'font-size':'50px', 'margin-top': '5vh'}, 'fast');
 		}
 	);
 };
