@@ -46,7 +46,7 @@ a {
 	cursor: default;
 }
 a:hover {
-	text-shadow: 3px 4px 5px black;
+	text-shadow: 3px 5px 5px #444444;
 	color: white;
 	font-size: 70px;
 }
