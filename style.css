@@ -1,0 +1,87 @@
+body {
+	background-color: #FF5555;
+	color: white;
+	font-size: 50px;
+	height: 100vh;
+	background: linear-gradient(-45deg, #2EE9FF, #3B76FF);
+	background: -webkit-linear-gradient(-45deg, #2EE9FF, #3B76FF);
+	background: -o-linear-gradient(-45deg, #2EE9FF, #3B76FF);
+	background: -moz-linear-gradient(-45deg, #2EE9FF, #3B76FF);
+	text-align: center;
+}
+
+.heading {
+	text-align: center;
+	font-size: 9vw;  /*vw percent of represents viewport width , so text will scale down if viewed on smaller screen*/
+	font-family: "Poiret One";
+	text-shadow: 1px 3px 10px black;
+}
+.wtime, .btime {
+	font-size: 20px;	
+	margin-top: 6vh;
+	padding: 0;
+	color: rgba(255, 255, 255, 0);
+}
+.wplus, .wminus, .bplus, .bminus {
+	font-size: 50px;
+	text-align: center;
+	margin-top: 3vh;
+	padding: 0;
+}
+.wtimeInterval, .btimeInterval {
+	text-align: center;
+	margin-top: 2vh;
+}
+.clock {
+	margin-top: none;
+	text-align: center;
+}
+.play, .reset {
+	margin-top: 5vh;
+	text-align: center;
+	font-size: 50px;
+}
+a {
+	color: white;
+	cursor: default;
+}
+a:hover {
+	text-shadow: 3px 5px 5px #444444;
+	color: white;
+	font-size: 70px;
+}
+a:visited {
+	color: white;
+}
+.minutes {
+	font-family: "Poiret One";
+	font-size: 100px;
+	padding-left:30px;
+}
+.seconds {
+	font-family: "Poiret One";
+}
+.resetStyle {
+	background: linear-gradient(-45deg, grey, #3B76FF);
+	background: -webkit-linear-gradient(-45deg, grey, #3B76FF);
+	background: -o-linear-gradient(-45deg, grey, #3B76FF);
+	background: -moz-linear-gradient(-45deg, grey, #3B76FF);
+}
+.timeoutStyle {
+	background: linear-gradient(-45deg, #2ee9ff, #3B76FF);
+	background: -webkit-linear-gradient(-45deg, #2ee9ff, #3B76FF);
+	background: -o-linear-gradient(-45deg, #2ee9ff, #3B76FF);
+	background: -moz-linear-gradient(-45deg, #2ee9ff, #3B76FF);
+}
+.breakStyle {
+	background: linear-gradient(-45deg, green, #3B76FF);
+	background: -webkit-linear-gradient(-45deg, green, #3B76FF);
+	background: -o-linear-gradient(-45deg, green, #3B76FF);
+	background: -moz-linear-gradient(-45deg, green, #3B76FF);
+}
+.workStyle {
+	background: linear-gradient(-45deg, red, #3B76FF);
+	background: -webkit-linear-gradient(-45deg, red, #3B76FF);
+	background: -o-linear-gradient(-45deg, red, #3B76FF);
+	background: -moz-linear-gradient(-45deg, red, #3B76FF);
+}
