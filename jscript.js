@@ -4,6 +4,7 @@ var main = function() {
 	var intervalId = 0;
 	var breakTime = 0; var workTime = 0;
 	var sound = new Audio("alarm.mp3");
+	
 	function PlaySound() {
 		sound.play();
 	}
@@ -13,20 +14,20 @@ var main = function() {
 	if(secs < 10) {$('.seconds').html("0" + secs);}
 	else {$('.seconds').html(secs);}
 
-	$('.wplus').on('click', function(){
+	$('.workPlus').on('click', function(){
 		wtimeInterval += 5;
 		$('.wtimeInterval').html(wtimeInterval);
 	});
-	$('.wminus').on('click', function(){
+	$('.workMinus').on('click', function(){
 		wtimeInterval -= 5;
 		if (wtimeInterval < 0) {wtimeInterval = 0;}
 		$('.wtimeInterval').html(wtimeInterval);
 	});
-	$('.bplus').on('click', function(){
+	$('.breakPlus').on('click', function(){
 		btimeInterval += 5;
 		$('.btimeInterval').html(btimeInterval);
 	});
-	$('.bminus').on('click', function(){
+	$('.breakMinus').on('click', function(){
 		btimeInterval -= 5;
 		if (btimeInterval < 0) {btimeInterval = 0;}
 
@@ -124,66 +125,7 @@ var main = function() {
 		else {$('.minutes').html(mins);}
 		if(secs < 10) {$('.seconds').html("0" + secs);}
 		else {$('.seconds').html(secs);}
-	});
-	
-
-	$('.wplus').hover(
-		function() {
-			$('.wtime').css({"color":"white"});
-			$('.wplus').animate({'font-size':'60px', 'margin-top': '2vh'}, 'fast');
-		},
-		function() {
-			$('.wtime').css({"color":"rgba(1, 1, 1, 0)"});
-			$('.wplus').animate({'font-size':'50px', 'margin-top': '3vh'}, 'fast');
-		}
-	);
-	$('.bplus').hover(
-		function() {
-			$('.btime').css({"color":"white"});
-			$('.bplus').animate({'font-size':'60px', 'margin-top': '2vh'}, 'fast');
-		},
-		function() {
-			$('.btime').css({"color":"rgba(1, 1, 1, 0)"});
-			$('.bplus').animate({'font-size':'50px', 'margin-top': '3vh'}, 'fast');
-		}
-	);
-	$('.wminus').hover(
-		function() {
-			$('.wtime').css({"color":"white"});
-			$('.wminus').animate({'font-size':'60px', 'margin-top': '2vh'}, 'fast');
-		},
-		function() {
-			$('.wtime').css({"color":"rgba(1, 1, 1, 0)"});
-			$('.wminus').animate({'font-size':'50px', 'margin-top': '3vh'}, 'fast');
-		}
-	);
-	$('.bminus').hover(
-		function() {
-			$('.btime').css({"color":"white"});
-			$('.bminus').animate({'font-size':'60px', 'margin-top': '2vh'}, 'fast');
-		},
-		function() {
-			$('.btime').css({"color":"rgba(1, 1, 1, 0)"});
-			$('.bminus').animate({'font-size':'50px', 'margin-top': '3vh'}, 'fast');
-		}
-	); 
-
-	$('.play').hover(
-		function() {
-			$('.play').animate({'font-size':'60px', 'margin-top': '3vh'}, 'fast');
-		},
-		function() {
-			$('.play').animate({'font-size':'50px', 'margin-top': '5vh'}, 'fast');
-		}
-	);
-	$('.reset').hover(
-		function() {
-			$('.reset').animate({'font-size':'60px', 'margin-top': '3vh'}, 'fast');
-		},
-		function() {
-			$('.reset').animate({'font-size':'50px', 'margin-top': '5vh'}, 'fast');
-		}
-	);
+	});	
 };
 
 $('document').ready(main);

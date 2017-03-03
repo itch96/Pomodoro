@@ -11,52 +11,38 @@
 	<link rel="stylesheet" href="Frameworks/bootstrap/css/ms.css"/>
 </head>
 <body>
-	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12 col-md-12">
-				<h1 class="heading">Pomodoro Clock</h1>
-			</div>
+	<div class="col-xs-12 row heading">
+		<h1>Pomodoro Clock</h1>
+	</div>
+	<div class="col-xs-12" id="gap"></div>
+
+	<div class="col-xs-12 row timeSetter">
+		<div class="col-xs-12 col-md-6 workTimer">
+			<strong class="col-xs-6 col-md-12">Work Time</strong>
+			<span class="workPlus col-xs-2  col-md-4 glyphicon glyphicon-plus-sign"></span>
+			<p class="wtimeInterval col-xs-2 col-md-4">0</p>
+			<span class="workMinus col-xs-2 col-md-4 glyphicon glyphicon-minus-sign"></span>
+		</div>
+		<div class="col-xs-12 col-md-6 breakTimer">
+			<strong class="col-xs-6 col-md-12">Break Time</strong>
+			<span class="breakPlus col-xs-2 col-md-4 glyphicon glyphicon-plus-sign"></span>
+			<p class="btimeInterval col-xs-2 col-md-4">0</p>
+			<span class="breakMinus col-xs-2 col-md-4 glyphicon glyphicon-minus-sign"></span>
 		</div>
 	</div>
 	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="worktimer">
-				<p class="col-xs-3 col-md-3 wtime"><strong>Work Time</strong></p>
-				<a href="#" class="wp"><span class="wplus col-xs-1 col-xs-offset-0 col-md-1 glyphicon glyphicon-plus-sign"></span></a>
-				<p class="wtimeInterval col-xs-4 col-md-4">0</p>
-				<a href="#" class="wm"><span class="wminus col-xs-1 col-xs-offset-0 col-md-1 glyphicon glyphicon-minus-sign"></span></a>
-			</div>
-		</div>		
+	<div class="col-xs-12 row clock">
+		<p class="minutes"></p>
+		<p class="seconds"></p>
 	</div>
 	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="breaktimer">
-				<p class="col-xs-3 col-md-3 btime"><strong>Break Time</strong></p>
-				<a href="#" class="bp"><span class="bplus col-xs-1 col-xs-offset-0 col-md-1 glyphicon glyphicon-plus-sign"></span></a>
-				<p class="btimeInterval col-xs-4 col-md-4">0</p>
-				<a href="#" class="bm"><span class="bminus col-xs-1 col-xs-offset-0 col-md-1 glyphicon glyphicon-minus-sign"></span></a>
-			</div>
-		</div>
+	<div class="col-xs-12 row control">
+		<span class="play glyphicon glyphicon-play-circle"></span>
+		<span class="reset glyphicon glyphicon-remove-circle"></span>
 	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="clock">
-				<div class="minutes  col-xs-1 col-xs-offset-2 col-ms-1 col-ms-offset-4 col-sm-1 col-sm-offset-4 col-md-1 col-md-offset-4 col-lg-1 col-lg-offset-5"></div>
-				<div class="seconds  col-xs-1 col-xs-offset-4 col-ms-1 col-ms-offset-2 col-sm-1 col-sm-offset-2 col-md-offset-1 col-md-1 col-lg-1 col-lg-offset-1"></div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="control">
-				<a href="#"><span class="play col-xs-1 col-xs-offset-4 col-ms-1 col-ms-offset-4 col-sm-1 col-sm-offset-5 col-md-1 col-md-offset-5 glyphicon glyphicon-play-circle"></span></a>
-				<a href="#"><span class="reset col-xs-1 col-xs-offset-1 col-ms-1 col-ms-offset-1 col-sm-1 col-sm-offset-0 col-md-1 col-md-offset-0 glyphicon glyphicon-remove-circle"></span></a>	
-			</div>
-		</div>
+
+	<div id="footer" class="col-xs-12">
+		<p>Made with <span id="love" class="glyphicon glyphicon-heart"></span> by <em><a href="https://itch96.github.io">itch96</a></em></p>
 	</div>
 	
 	<script src="Frameworks/jQuery/jQuery.js"></script>

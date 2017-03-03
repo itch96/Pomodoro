@@ -3,6 +3,7 @@ body {
 	color: white;
 	font-size: 50px;
 	height: 100vh;
+	font-family: "Poiret One";
 	background: linear-gradient(-45deg, #2EE9FF, #3B76FF);
 	background: -webkit-linear-gradient(-45deg, #2EE9FF, #3B76FF);
 	background: -o-linear-gradient(-45deg, #2EE9FF, #3B76FF);
@@ -11,55 +12,53 @@ body {
 }
 
 .heading {
-	text-align: center;
-	font-size: 9vw;  /*vw percent of represents viewport width , so text will scale down if viewed on smaller screen*/
-	font-family: "Poiret One";
+	height: 20vh;
 	text-shadow: 1px 3px 10px black;
 }
-.wtime, .btime {
-	font-size: 20px;	
-	margin-top: 6vh;
-	padding: 0;
-	color: rgba(255, 255, 255, 0);
-}
-.wplus, .wminus, .bplus, .bminus {
-	font-size: 50px;
+.heading > h1 {
+	font-size: 9vw;
 	text-align: center;
-	margin-top: 3vh;
-	padding: 0;
 }
-.wtimeInterval, .btimeInterval {
+
+#gap {height: 10vh;}
+
+.timeSetter {height: 20vh;}
+
+strong {
+	font-size: 30px;
 	text-align: center;
-	margin-top: 2vh;
+}
+span:hover {
+	animation: button 200ms ease-in-out forwards;
+}
+@keyframes button {
+	0% {transform: scale(1);}
+	100% {text-shadow: 2px 2px 5px #2c2c2c; transform: scale(1.2);}
 }
 .clock {
-	margin-top: none;
+	height: 20vh;
 	text-align: center;
 }
-.play, .reset {
-	margin-top: 5vh;
+.control {
+	height: 20vh;
 	text-align: center;
 	font-size: 50px;
 }
-a {
-	color: white;
-	cursor: default;
+.minutes, .seconds {display: inline-block;}
+.minutes {font-size: 100px;}
+
+#footer {
+	height: 10vh;
+	font-size: 30px;
 }
-a:hover {
-	text-shadow: 3px 5px 5px #444444;
-	color: white;
-	font-size: 70px;
+a, a:hover, a:visited, a:active {
+	text-decoration: none;
+	color: navajowhite;
 }
-a:visited {
-	color: white;
-}
-.minutes {
-	font-family: "Poiret One";
-	font-size: 100px;
-	padding-left:30px;
-}
-.seconds {
-	font-family: "Poiret One";
+#love {color: red; animation: beat 1s ease-in-out infinite;}
+@keyframes beat {
+	50% {transform: scale(1.1); text-shadow: 2px 2px 5px darkred;}
+	100% {transform: scale(1);}
 }
 .resetStyle {
 	background: linear-gradient(-45deg, grey, #3B76FF);
@@ -84,4 +83,31 @@ a:visited {
 	background: -webkit-linear-gradient(-45deg, red, #3B76FF);
 	background: -o-linear-gradient(-45deg, red, #3B76FF);
 	background: -moz-linear-gradient(-45deg, red, #3B76FF);
+}
+
+@media only screen and (min-width: 320px) {
+	.heading > h1 {font-size: 45px;}
+	strong {font-size: 22px;}
+	span {font-size: 35px !important;}
+	.wtimeInterval, .btimeInterval {font-size: 30px; text-align: center;}
+	.play, .reset {font-size: 50px !important;}
+	#footer {font-size: 25px;}
+}
+@media only screen and (min-width: 425px) {
+	.heading > h1 {font-size: 55px;}
+	strong {font-size: 30px;}
+	#footer {font-size: 30px;}
+}
+@media only screen and (min-width: 768px) {
+	.heading > h1 {font-size: 60px;}
+	strong {font-size: 35px;}
+	span {font-size: 40px !important;}
+	.wtimeInterval, .btimeInterval {font-size: 35px; text-align: center;}
+}
+@media only screen and (min-width: 1024px) {
+	.heading > h1 {font-size: 80px;}
+	span {font-size: 45px !important;}
+	.wtimeInterval, .btimeInterval {font-size: 40px; text-align: center;}
+	.minutes {font-size: 110px;}
+	.seconds {font-size: 50px;}
 }
