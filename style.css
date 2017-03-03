@@ -92,11 +92,13 @@ a, a:hover, a:visited, a:active {
 	.wtimeInterval, .btimeInterval {font-size: 30px; text-align: center;}
 	.play, .reset {font-size: 50px !important;}
 	#footer {font-size: 25px;}
+	#love {font-size: 25px !important;}
 }
 @media only screen and (min-width: 425px) {
 	.heading > h1 {font-size: 55px;}
 	strong {font-size: 30px;}
 	#footer {font-size: 30px;}
+	#love {font-size: 30px !important;}
 }
 @media only screen and (min-width: 768px) {
 	.heading > h1 {font-size: 60px;}
@@ -110,4 +112,6 @@ a, a:hover, a:visited, a:active {
 	.wtimeInterval, .btimeInterval {font-size: 40px; text-align: center;}
 	.minutes {font-size: 110px;}
 	.seconds {font-size: 50px;}
+	.workTimer {border-right: 2px solid white;}
+	.play, .reset {margin-top: 5vh !important;}
 }
