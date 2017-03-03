@@ -4,10 +4,9 @@ body {
 	font-size: 50px;
 	height: 100vh;
 	font-family: "Poiret One";
-	background: linear-gradient(-45deg, #2EE9FF, #3B76FF);
-	background: -webkit-linear-gradient(-45deg, #2EE9FF, #3B76FF);
-	background: -o-linear-gradient(-45deg, #2EE9FF, #3B76FF);
-	background: -moz-linear-gradient(-45deg, #2EE9FF, #3B76FF);
+	background: #DCE35B; /* fallback for old browsers */
+	background: -webkit-linear-gradient(125deg, #DCE35B , #45B649); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(125deg, #DCE35B , #45B649); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	text-align: center;
 }
 
@@ -61,28 +60,28 @@ a, a:hover, a:visited, a:active {
 	100% {transform: scale(1);}
 }
 .resetStyle {
-	background: linear-gradient(-45deg, grey, #3B76FF);
-	background: -webkit-linear-gradient(-45deg, grey, #3B76FF);
-	background: -o-linear-gradient(-45deg, grey, #3B76FF);
-	background: -moz-linear-gradient(-45deg, grey, #3B76FF);
+	
+
+background: #5f2c82; /* fallback for old browsers */
+background: -webkit-linear-gradient(-25deg, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-25deg, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 }
 .timeoutStyle {
-	background: linear-gradient(-45deg, #2ee9ff, #3B76FF);
-	background: -webkit-linear-gradient(-45deg, #2ee9ff, #3B76FF);
-	background: -o-linear-gradient(-45deg, #2ee9ff, #3B76FF);
-	background: -moz-linear-gradient(-45deg, #2ee9ff, #3B76FF);
+background: #DCE35B; /* fallback for old browsers */
+background: -webkit-linear-gradient(-125deg, #DCE35B , #45B649); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-125deg, #DCE35B , #45B649); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
 }
 .breakStyle {
-	background: linear-gradient(-45deg, green, #3B76FF);
-	background: -webkit-linear-gradient(-45deg, green, #3B76FF);
-	background: -o-linear-gradient(-45deg, green, #3B76FF);
-	background: -moz-linear-gradient(-45deg, green, #3B76FF);
+background: green;
+background: linear-gradient(-45deg, green, #3B76FF);
+background: -webkit-linear-gradient(-45deg, green, #3B76FF);
 }
 .workStyle {
-	background: linear-gradient(-45deg, red, #3B76FF);
-	background: -webkit-linear-gradient(-45deg, red, #3B76FF);
-	background: -o-linear-gradient(-45deg, red, #3B76FF);
-	background: -moz-linear-gradient(-45deg, red, #3B76FF);
+background: #52c234; /* fallback for old browsers */
+background: -webkit-linear-gradient(-45deg, #52c234 , #061700); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(-45deg, #52c234 , #061700); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @media only screen and (min-width: 320px) {
